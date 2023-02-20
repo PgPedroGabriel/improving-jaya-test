@@ -40,17 +40,17 @@ describe('AppController (e2e)', () => {
 
     expect(response.body).toStrictEqual([]);
 
-    const event1 = await eventsService.create({
+    await eventsService.create({
       action: 'Action test',
       repository: 'Repository test',
       issue_number: 2550,
     });
-    const event2 = await eventsService.create({
+    await eventsService.create({
       action: 'Action test 2',
       repository: 'Repository test 2',
       issue_number: 2550,
     });
-    const event3 = await eventsService.create({
+    await eventsService.create({
       action: 'A different issue',
       repository: 'Repository',
       issue_number: 1111,
