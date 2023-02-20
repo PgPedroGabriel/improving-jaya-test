@@ -34,3 +34,9 @@ $ npm run test
 # e2e tests
 $ npm run test:e2e
 ```
+
+## Expose the webhook
+
+You can use ngrok to setup a github webhook appointing to issues. The url might be like this: https://sa.ngrok.io/webhook/github
+
+The important thing is that you should use this path "webhook/github"
